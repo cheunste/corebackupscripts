@@ -50,6 +50,7 @@ def create_sub_directories(path):
 '''
 Copy the most recent created directory
 '''
+
 def copy_directory(current_directory,date):
 	shutil.copytree(current_directory, BACKUP_PATH.format(date))
 	pass

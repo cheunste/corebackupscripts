@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd9d8df0-e145-4486-a62e-a847cbe3c82d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreRoboCopy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UccProjectConfig.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/systemConfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreBackupScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreBackupScript.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreBackupScriptTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreBackupScriptTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreRoboCopy.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoboCopy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CoreBackupScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-1">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -33,35 +30,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="238">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UccProjectConfig.csv">
+        <entry file="file://$PROJECT_DIR$/CoreRoboCopy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="31">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemConfig">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CoreBackupScriptTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+            <state relative-caret-position="320">
+              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -85,20 +76,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoreRoboCopy.py" />
-        <option value="$PROJECT_DIR$/CoreBackupScript.py" />
         <option value="$PROJECT_DIR$/config" />
         <option value="$PROJECT_DIR$/config.csv" />
         <option value="$PROJECT_DIR$/Config.py" />
+        <option value="$PROJECT_DIR$/CoreBackupScript.py" />
+        <option value="$PROJECT_DIR$/CoreRoboCopy.py" />
         <option value="$PROJECT_DIR$/CoreBackupScriptTest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1845" />
-    <option name="y" value="-30" />
-    <option name="width" value="1934" />
-    <option name="height" value="1054" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="968" />
+    <option name="height" value="508" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,60 +173,74 @@
       <option name="project" value="LOCAL" />
       <updated>1578345137831</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added other python files for config, and robo copy along with some other (dummy) config files">
+      <created>1578514443001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578514443001</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented the call_robo_copy function along with some tests. Also started modifiying the config.py to import configs (WIP)">
+      <created>1578599679625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578599679625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 28m 08s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 14h 55m 14s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 28m 42s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 14h 58m 55s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 40m 21s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 00m 48s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 41m 51s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 01m 07s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 42m 13s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 05m 45s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 42m 22s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 05m 53s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 42m 29s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 07m 26s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 42m 55s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 07m 34s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 11h 43m 08s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 07m 53s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.08 at 12h 09m 55s.xml">
+    <history-entry file="Unittests_in_CoreBackupScriptTest_py - 2020.01.09 at 15h 08m 16s.xml">
       <configuration name="Unittests in CoreBackupScriptTest.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-4" y="-4" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49093816" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4936034" weight="0.3997923" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48507464" visible="true" weight="0.3434453" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48880598" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5090618" side_tool="true" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51492536" side_tool="true" visible="true" weight="0.3434453" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4968017" weight="0.32917964" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49573562" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -244,7 +249,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit. Create and removed folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit. Create and removed folders" />
+    <MESSAGE value="Added other python files for config, and robo copy along with some other (dummy) config files" />
+    <MESSAGE value="Implemented the call_robo_copy function along with some tests. Also started modifiying the config.py to import configs (WIP)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the call_robo_copy function along with some tests. Also started modifiying the config.py to import configs (WIP)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
@@ -256,13 +263,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoreRoboCopy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/suite.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -291,32 +291,8 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="596" selection-start-line="596" selection-end-line="596" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoreBackupScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/systemConfig">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UccProjectConfig.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -329,10 +305,65 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="1081" selection-start-line="1081" selection-end-line="1081" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreBackupScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="601" selection-start-line="601" selection-end-line="601" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreRoboCopy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CoreBackupScriptTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+        <state relative-caret-position="320">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
