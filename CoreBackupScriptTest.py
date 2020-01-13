@@ -44,10 +44,6 @@ class FolderMigration(unittest.TestCase):
 		self.assertTrue(os.path.isdir(str.format(Cbs.BACKUP_PATH, current_date.strftime("%m-%d-%Y"))))
 		self.assertTrue(os.path.isdir(Cbs.BACKUP_PATH[:-3]))
 
-	def test_read_from_config_csv(self):
-		project_list = Config.read_project_sites(Config.UCC_PROJECT_CONFIG_FILE)
-		self.assertTrue(len(project_list)>0)
-
 
 class RoboCopyTests(unittest.TestCase):
 	test_include_file_name = "test12345"
@@ -104,6 +100,12 @@ class RoboCopyTests(unittest.TestCase):
 		complete_file_path = path + filename + ".txt"
 
 		self.assertTrue(os.path.isfile(complete_file_path))
+
+
+class ConfigurationTest(unittest.TestCase):
+	def test_read_from_config_csv(self):
+		project_list = Config.read_project_sites(Config.UCC_PROJECT_CONFIG_FILE)
+		self.assertTrue(len(project_list) == 2)
 
 
 if __name__ == '__main__':
