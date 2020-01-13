@@ -7,6 +7,17 @@ FE_PROJECT_CONFIG_FILE = 'config/FeProjectConfig.csv'
 _REQUIRED_FIELD_LENGTH = 3
 
 
+def compile_config_list() -> list:
+	config_list = [
+		UCC_PROJECT_CONFIG_FILE,
+		PDX_HMI_PROJECT_CONFIG_FILE,
+		SITE_HMI_PROJECT_CONFIG_FILE,
+		FE_PROJECT_CONFIG_FILE
+	]
+	return config_list
+
+
+
 def read_project_sites(config_file_name) -> list:
 	with open(config_file_name) as config_file:
 		config_file.__next__()

@@ -1,10 +1,13 @@
 import sys, getopt
+import datetime
+import multiprocessing
 from module import RoboCopyModule
 from module import FolderModule
 from module import ConfigModule
 
 
 def use_robocopy():
+	config_list = ConfigModule.compile_config_list()
 	pass
 
 
