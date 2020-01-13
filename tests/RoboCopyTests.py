@@ -3,7 +3,7 @@ import shutil
 import unittest
 import zipfile
 
-import CoreRoboCopy as Robo
+from module import RoboCopyModule as Robo
 
 
 class RoboCopyTests(unittest.TestCase):

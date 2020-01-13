@@ -3,7 +3,7 @@ import shutil
 import unittest
 from datetime import datetime, timedelta
 
-import CoreBackupScript as Cbs
+from module import FolderModule as Cbs
 
 
 class FolderMigration(unittest.TestCase):

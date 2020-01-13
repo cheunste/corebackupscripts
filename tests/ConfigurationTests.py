@@ -1,7 +1,7 @@
 import os
 import unittest
 
-import Config as Config
+from module import ConfigModule as Config
 
 
 class ConfigurationTest(unittest.TestCase):
@@ -10,4 +10,3 @@ class ConfigurationTest(unittest.TestCase):
 		self.assertTrue(os.path.isfile(Config.UCC_PROJECT_CONFIG_FILE))
 		ucc_config_list = Config.read_project_sites(Config.UCC_PROJECT_CONFIG_FILE)
 		self.assertTrue(len(ucc_config_list) == 2)
-
