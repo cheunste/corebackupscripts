@@ -103,10 +103,11 @@ class RoboCopyTests(unittest.TestCase):
 
 
 class ConfigurationTest(unittest.TestCase):
-	def test_read_from_config_csv(self):
-		project_list = Config.read_project_sites(Config.UCC_PROJECT_CONFIG_FILE)
-		self.assertTrue(len(project_list) == 2)
 
+	def test_read_ucc_configuration_file(self):
+		self.assertTrue(os.path.isfile(Config.UCC_PROJECT_CONFIG_FILE))
+		ucc_config_list = Config.read_project_sites(Config.UCC_PROJECT_CONFIG_FILE)
+		self.assertTrue(len(ucc_config_list) == 2)
 
 if __name__ == '__main__':
 	unittest.main()

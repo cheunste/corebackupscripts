@@ -1,12 +1,13 @@
 import csv
 
-UCC_PROJECT_CONFIG_FILE='UccProjectConfig.csv'
-PDX_HMI_PROJECT_CONFIG_FILE='PdxHmiProjectConfig.csv'
-SITE_HMI_PROJECT_CONFIG_FILE='SiteHmiProjectConfig.csv'
-FE_PROJECT_CONFIG_FILE='FeProjectConfig.csv'
+UCC_PROJECT_CONFIG_FILE='config/UccProjectConfig.csv'
+PDX_HMI_PROJECT_CONFIG_FILE='config/PdxHmiProjectConfig.csv'
+SITE_HMI_PROJECT_CONFIG_FILE='config/SiteHmiProjectConfig.csv'
+FE_PROJECT_CONFIG_FILE='config/FeProjectConfig.csv'
 _REQUIRED_FIELD_LENGTH = 3
 
-def read_project_sites(config_file_name)->list:
+
+def read_project_sites(config_file_name) -> list:
 	with open(config_file_name) as config_file:
 		config_file.__next__()
 		site_project_csv = csv.reader(config_file)
@@ -16,8 +17,10 @@ def read_project_sites(config_file_name)->list:
 				project_list.append(row)
 		return project_list
 
+
 def _is_number_of_fields_valid(row) -> bool:
 	return len(row) == _REQUIRED_FIELD_LENGTH
+
 
 def _is_field_name_valid(row) -> bool:
 	for field in row:
