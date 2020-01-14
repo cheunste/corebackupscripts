@@ -30,3 +30,15 @@ class ConfigurationTest(unittest.TestCase):
 	def test_get_config_list(self):
 		config_list = Config.compile_config_list()
 		self.assertTrue(len(config_list) == 4)
+
+	def test_get_tuple_from_config_list(self):
+		hostname = "HOSTNAME"
+		ip_address = "xx.xx.xx.xxx"
+		zip_file_name = "some_zip_file"
+
+		test_list = [hostname,ip_address,zip_file_name]
+		(tuple_hostname,tuple_ip,tuple_zip)= Config.read_project_sites(test_list)
+
+		self.assertTrue(tuple_hostname == hostname)
+		self.assertTrue(tuple_ip == ip_address)
+		self.assertTrue(tuple_zip == zip_file_name)
