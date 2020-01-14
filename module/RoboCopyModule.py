@@ -1,6 +1,8 @@
 from subprocess import call
 import os,zipfile
 
+FLAGS = "/MT:50 /Z /E /R:5 /XF *_*.dat *_*.txt"
+
 
 def call_robo_copy(source_dir,dest_dir, *flags):
 	#ROBOCOPY \\source\f$\whatever destination /XF *_*.dat *_*.txt
