@@ -17,7 +17,7 @@ def compile_config_list() -> list:
 	return config_list
 
 
-def read_project_sites(config_file_name) -> tuple:
+def read_project_sites(config_file_name) -> list:
 	with open(config_file_name) as config_file:
 		config_file.__next__()
 		site_project_csv = csv.reader(config_file)
@@ -25,7 +25,11 @@ def read_project_sites(config_file_name) -> tuple:
 		for row in site_project_csv:
 			if _is_number_of_fields_valid(row) and _is_field_name_valid(row):
 				project_list.append(row)
-		return project_list[0],project_list[1],project_list[2]
+		return project_list
+
+
+def convert_config_list_to_tuple(config_list) -> tuple:
+	return tuple(config_list)
 
 
 def _is_number_of_fields_valid(row) -> bool:

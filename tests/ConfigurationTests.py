@@ -37,7 +37,7 @@ class ConfigurationTest(unittest.TestCase):
 		zip_file_name = "some_zip_file"
 
 		test_list = [hostname,ip_address,zip_file_name]
-		(tuple_hostname,tuple_ip,tuple_zip)= Config.read_project_sites(test_list)
+		(tuple_hostname,tuple_ip,tuple_zip)= Config.convert_config_list_to_tuple(test_list)
 
 		self.assertTrue(tuple_hostname == hostname)
 		self.assertTrue(tuple_ip == ip_address)
