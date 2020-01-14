@@ -42,21 +42,22 @@ class RoboCopyTests(unittest.TestCase):
 	def test_call_robocopy_with_config(self):
 		config_file = Config.UCC_PROJECT_CONFIG_FILE
 		project_list = Config.read_project_sites(config_file)
+
 		for project in project_list:
 			hostname = project[0]
 			ip_address = project[1]
 			zip_file_name = project[2]
 
-			f_drive = str.format(r"\\{0}\f$\\",ip_address)
-			d_drive = str.format(r"\\{0}\d$\\",ip_address)
+			f_drive = str.format(r"\\{0}\f$\\", ip_address)
+			d_drive = str.format(r"\\{0}\d$\\", ip_address)
 
 			print(f_drive)
 			self.assertFalse(not hostname)
 			self.assertFalse(not ip_address)
 			self.assertFalse(not zip_file_name)
 
-			Robo.call_robo_copy(ip_address,f_drive,Robo.FLAGS)
-			Robo.call_robo_copy(ip_address,d_drive,Robo.FLAGS)
+			Robo.call_robo_copy(ip_address, f_drive, Robo.FLAGS)
+			Robo.call_robo_copy(ip_address, d_drive, Robo.FLAGS)
 
 	def _create_dummy_directories(self):
 		sub_directory="/sub/"
@@ -65,7 +66,7 @@ class RoboCopyTests(unittest.TestCase):
 		# Create some sub directories. Very arbitrary
 		for x in range(0,self.number_of_sub_folders):
 			for y in range(0, self.number_of_sub_folders):
-				sub_directory_name = str.format("/{0}/{0}{1}",x,y)
+				sub_directory_name = str.format("/{0}/{0}{1}", x, y)
 				os.makedirs(self.source_dir+sub_directory+sub_directory_name)
 
 	def _create_dummy_files(self, directory):
