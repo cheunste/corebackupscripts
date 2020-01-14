@@ -10,6 +10,12 @@ def call_robo_copy(source_dir,dest_dir, *flags):
 	pass
 
 
+def use_site(hostname,destination):
+	full_path_d_drive = str.format(r"\\{0}\d$\\PcVue")
+	full_path_f_drive = str.format(r"\\{0}\d$\\PcVue")
+	call_robo_copy(hostname, destination, FLAGS)
+
+
 def zip_directory(source_directory,zip_file_path,zip_file_name="Test"):
 
 	file_paths = _get_file_paths_inside_directory(source_directory)

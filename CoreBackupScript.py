@@ -8,6 +8,9 @@ from module import ConfigModule
 
 def use_robocopy():
 	config_list = ConfigModule.compile_config_list()
+	for config in config_list:
+		(hostname,ip_address,zip_file_name) = \
+			ConfigModule.convert_config_list_to_tuple(ConfigModule.read_project_sites(config))
 	pass
 
 

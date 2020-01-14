@@ -59,6 +59,11 @@ class RoboCopyTests(unittest.TestCase):
 			Robo.call_robo_copy(ip_address, f_drive, Robo.FLAGS)
 			Robo.call_robo_copy(ip_address, d_drive, Robo.FLAGS)
 
+	def test_call_with_site(self):
+		test_site="testtest"
+		self.assertTrue(False)
+		Robo.use_site(test_site)
+
 	def _create_dummy_directories(self):
 		sub_directory="/sub/"
 		os.makedirs(self.source_dir)
