@@ -7,13 +7,18 @@ FLAGS = "/MT:50 /Z /E /R:5 /XF *_*.dat *_*.txt"
 def call_robo_copy(source_dir,dest_dir, *flags):
 	#ROBOCOPY \\source\f$\whatever destination /XF *_*.dat *_*.txt
 	call(["robocopy",source_dir,dest_dir, flags])
-	pass
 
 
-def use_site(hostname,destination):
-	full_path_d_drive = str.format(r"\\{0}\d$\\PcVue")
-	full_path_f_drive = str.format(r"\\{0}\d$\\PcVue")
-	call_robo_copy(hostname, destination, FLAGS)
+def use_site(hostname, destination, test_mode=False):
+	full_path_d_drive = str.format(r"\\{0}\d$\\PcVue",hostname)
+	full_path_f_drive = str.format(r"\\{0}\d$\\PcVue",hostname)
+
+	# If in test mode, then use your own VMs
+	if test_mode:
+		call_robo_copy(hostname, destination, FLAGS)
+	else:
+		call_robo_copy(full_path_d_drive, destination, FLAGS)
+		call_robo_copy(full_path_f_drive,destination,FLAGS)
 
 
 def zip_directory(source_directory,zip_file_path,zip_file_name="Test"):
